@@ -14,4 +14,9 @@ print("2*3=", 2*3)
 print("2/3=", 2/3)
 print("안녕하세요?")
 print("이번 코드에는 많은 오류가 있다네요")
+
 print("제가 다 고쳐보겠습니다")
+from collections import Counter
+f = open("d://mobydick.txt", encoding="utf-8")
+count = Counter(f.read().split())
+print("단어출현횟수:", count)
